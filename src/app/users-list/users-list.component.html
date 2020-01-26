@@ -1,0 +1,14 @@
+<div class="user-container" *ngFor="let user of users" [ngStyle]="{
+    border: '1px solid black'
+}">
+
+    <h3 [ngStyle]="{
+        color: 'green',
+        fontWeight: 'bold'
+    }">User name is: {{user.name}}, and LastName is: {{user.lastName}}</h3>
+    <h3 [ngStyle]="{
+        color: 'gray',
+        fontWeight: 'bold'
+    }">User age is: {{user.age}}</h3>
+
+</div>
